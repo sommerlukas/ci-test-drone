@@ -1,9 +1,9 @@
 kind: pipeline
-name: test
+name: gradle-test
 
 steps:
-- name: gradle-test
-  image: gradle
+- name: test
+  image: gradle:jdk10
   commands:
-  - echo "Hello, world!"
-  - gradle test
+  - gradle assemble
+  - gradle check
