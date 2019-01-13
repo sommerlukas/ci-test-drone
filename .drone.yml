@@ -1,0 +1,8 @@
+kind: pipeline
+name: test
+
+steps:
+- name: gradle-test
+  image: gradle
+  commands:
+  - gradle test
