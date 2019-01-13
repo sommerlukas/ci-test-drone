@@ -5,4 +5,5 @@ steps:
 - name: gradle-test
   image: gradle
   commands:
+  - echo "Hello, world!"
   - gradle test
